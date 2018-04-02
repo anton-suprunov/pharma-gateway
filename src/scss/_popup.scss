@@ -1,0 +1,72 @@
+/* TERMS */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.popup__container {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:712px;
+  height:500px;
+  border-top:2px solid #f1ede1;
+  border-bottom:2px solid #f1ede1;
+  background-color:#fff;
+  padding:20px;
+  z-index:2;
+}
+
+.popup__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+.popup__title {
+  font-weight:700;
+  font-family: "Open Sans";
+  text-align: center;
+  font-size:18px;
+  color:#616161;
+  margin:0; 
+}
+
+.popup__text {
+  margin-top: 10px;
+  overflow-y:scroll;
+  height:350px;
+}
+
+.popup__p,
+.popup ul {
+  font-size:14px;
+  color:#2c2c2a;
+  margin-bottom:15px
+}
+
+.popup__btn {
+  margin: 23px auto 0;
+  width: 241px;
+  height: 67px;
+  display: block;
+  background-color: $color-green;
+  margin: 10px auto 0;
+  font-size: 20px;
+  font-weight: 700;
+  color:#fefefe;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 67px;
+  text-decoration: none;
+}

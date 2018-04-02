@@ -1,0 +1,91 @@
+doctype html
+head
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  title Pharma Platform
+  meta(name="description" content="")
+  link(rel="stylesheet" href="css/styles.css")
+  link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet")
+  link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet")
+
+  //link(rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png")
+  //link(rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32")
+  //link(rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16")
+  //link(rel="manifest" href="/manifest.json")
+  //link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
+  //meta(name="theme-color" content="#ffffff")
+body
+  header.header
+    a(href="/" class="login") Log in
+    a(href="/" class="logo") 
+
+
+  .slogan
+    .container.container_flex
+      .logo-2
+      .slogan__text
+        .slogan__title Service de suivi thérapeutique offert par mon pharmacien
+        ul.slogan__list
+          li.slogan__li Maximiser les effets de vos traitements
+          li.slogan__li Améliorer votre qualité de vie
+          li.slogan__li Accéder à des offres exclusives et personnalisées
+
+  .columns.container
+    .columns__column.columns__column_1
+      .btn 
+        | Une information 
+        br
+        | de santé multimédia 
+        br
+        | de haute qualité
+
+      .plus-list
+        .plus-list__li De nouvelles informations  sur vos traitements
+        .plus-list__li Des conseils pour le quotidien
+
+    .columns__column.columns__column_2
+      .btn 
+        | Une communication 
+        br
+        | personnalisée 
+        br
+        | avec votre pharmacien
+
+      .plus-list 
+        .plus-list__li 
+          | Un soutien continue 
+          br 
+          | de votre pharmacien 
+        .plus-list__li 
+          | La possibilité d’impliquer 
+          br 
+          | vos soignants et aidants 
+      
+    .columns__column.columns__column_3
+      .btn
+        | Un soutien 
+        br
+        | dans la gestion 
+        br
+        | de vos traitements
+
+      .plus-list 
+        .plus-list__li Des réponses personnalisées à vos questions
+        .plus-list__li 
+          | Un soutien éducatif 
+          br 
+          | pour l’administration 
+          br
+          | des traitements et la gestion
+          br 
+          | des effets secondaires
+
+  footer.footer
+    .container.container_flex.container_footer
+      span.footer__rights &copy; 2018 PlaceForPeople all rights reserved
+      a.footer__mail(href="mailto:contact@placeforpeople.com") contact@placeforpeople.com
+      span.footer__phone 06 68 88 66 28
+
+  //include includes/terms.pug
+
+  script(src="js/app.js")

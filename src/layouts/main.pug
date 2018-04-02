@@ -1,0 +1,107 @@
+doctype html
+head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title HOT YOGA 36 - Старейшая студия горячей йоги в центре Петербурга
+    meta(name="description" content="HOT YOGA 36 - Старейшая студия горячей йоги в центре Петербурга")
+    link(rel="stylesheet" href="css/styles.css")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet")
+
+    link(rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16")
+    link(rel="manifest" href="/manifest.json")
+    link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="theme-color" content="#ffffff")
+body
+    header(class="header")
+        div(class="container")
+            a(href="/" class="logo") HOTYOGA36
+            nav.nav
+                span.nav__toggle
+                    span
+                ul.menu
+                    li.menu__item
+                        a(class="menu__link menu__link_top" href="/") Домой
+                    li.menu__item
+                        a(class="menu__link menu__link_top" href="#") Студия
+                        div.menu__dropdown
+                            ul.menu.menu_sub
+                                li.menu__item.menu__item_sub
+                                    a(class="menu__link menu__link_sub" href="hot.html") Горячая йога
+                                li.menu__item.menu__item_sub
+                                    a(class="menu__link menu__link_sub" href="about.html") О нас
+                                li.menu__item.menu__item_sub
+                                    a(class="menu__link menu__link_sub" href="teachers.html") Преподаватели
+                                li.menu__item.menu__item_sub
+                                    a(class="menu__link menu__link_sub" href="classes.html") Классы
+                    li.menu__item
+                        a(class="menu__link menu__link_top" href="schedule.html") Расписание
+                    li.menu__item
+                        a(class="menu__link menu__link_top" href="prices.html") Стоимость
+                    li.menu__item
+                        a(class="menu__link menu__link_top" href="rules.html") Правила
+                    li.menu__item
+                        a(class="menu__link menu__link_top" href="contacts.html") Контакты
+
+    block content
+
+    footer(class="footer")
+        div(class="container")
+            a(class="footer__36")
+            p(class="footer__adr")
+                | Санкт-Петербург,
+                br
+                | Рубинштейна, 36
+                br
+                | домофон 36В
+                br
+                br
+                a(href="mailto:hotyoga36@gmail.com" class="footer__adr-email") hotyoga36@gmail.com
+
+            div(class="widgets")
+                div.widget.widget_vk
+                    div(id="vk_groups")
+                    //script.
+                        VK.Widgets.Group("vk_groups", {mode: 4, height: "270", width: "auto"}, 124085376);
+
+                div.widget.widget_fb
+                    div#fb-root
+                    div(class="fb-page" data-href="https://www.facebook.com/hotyoga36" data-tabs="timeline" data-width="255"
+                    data-height="323" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                    data-show-facepile="false")
+                        blockquote(cite="https://www.facebook.com/hotyoga36" class="fb-xfbml-parse-ignore")
+                            a(href="https://www.facebook.com/hotyoga36") Hot Yoga 36 - Студия горячей йоги в Петербурге на Рубинштейна 36
+                    script.
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=280467664480";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+
+                div.widget.widget_instagram
+                    a.widget__full-link(href="http://instagram.com/hotyoga36" target="_blank")
+                    div(class="instagram-widget")
+                        iframe(src="" id="instagram-widget" class="snapwidget-widget" allowTransparency="true"
+                            frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:255px; height:255px")
+
+            div(class="icons icons_placeholder")
+                a(href="https://www.facebook.com/hotyoga36/" target="_blank" class="icons__icon icons__icon_fb") facebook
+                a(href="https://vk.com/hotyoga36" target="_blank" class="icons__icon icons__icon_vk") vk
+                a(href="https://www.youtube.com/channel/UCCZ4hjNxKn9A4iQ2NZx9xIA" target="_blank" class="icons__icon icons__icon_youtube") youtube
+                a(href="https://www.instagram.com/hotyoga36/" target="_blank" class="icons__icon icons__icon_instagram") instagram
+                a(href="https://telegram.me/hotyoga36" target="_blank" class="icons__icon icons__icon_telegram") telegram
+                // a(href="mailto:hotyoga36@gmail.com" class="icons__icon icons__icon_email") email
+
+
+    //include includes/terms.pug
+
+something
+    script(src="js/app.js")
+    
+    //ga
+    script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-98237151-1', 'auto'); ga('send', 'pageview');

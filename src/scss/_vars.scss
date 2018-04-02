@@ -1,0 +1,13 @@
+$rootFontSize: 16px;
+
+$color-green: #5bc53d;
+
+$breakpoints: (
+  'mobile':  ( min-width:  320px ),
+  'smallestonly' : (max-width: 420px),
+  'mobileonly' : (max-width: 979px),
+  //'tablet': ( min-width:  480px ),
+  'desktop':  ( min-width: 980px ),
+  'desktop-large': (min-width: 1200px ),
+  'with-social' : (min-width: 1276px)
+) !default;
